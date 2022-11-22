@@ -1,0 +1,5 @@
+﻿Select p.Name as ProductName, c.Name as CategoryName
+from Product p
+left join ProductCategory pc on pc.ProductId = p.Id
+left join Category c on pc.CategoryId = c.Id
+ order by p.Name, c.Name
